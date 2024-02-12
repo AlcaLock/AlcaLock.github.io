@@ -1,0 +1,137 @@
+body{
+
+    background-image: url(Imagenes/Imagen\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+font-family: 'Segoe UI'; margin: 0; padding: 0;
+}
+
+header nav img {
+    width: 50px;
+}
+
+header nav label,
+#btn-menu {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-self: right;
+}
+
+header nav ul li {
+    padding: 4px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+@media screen {
+    header nav label {
+        display: block;
+        cursor: pointer;
+        justify-self: right;
+    }
+
+    .items-menu {
+        display: none; 
+        position: static;
+        padding-left: 0;
+        margin: 50px -100%;
+        background-color: #c7f2c3;
+        width: 100%;
+        top: 0;
+        text-align: center;
+    }
+
+    .items-menu li {
+        border-bottom: 1pxsolid black;
+    }
+
+    #btn-menu:checked ~ .items-menu {
+        display: block; 
+        margin: 40px 0;
+    }
+}
+
+body aside {
+    width: 50%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left; 
+}
+
+
+body main {
+    width: 50%;
+    padding: 8%;
+    box-sizing: border-box;
+    float: right; 
+}
+
+
+
+h1{ 
+    color:#693e20;
+
+}
+
+h2{
+    color: #898506;
+}
+
+
+body {
+    font-size: 100%; 
+    line-height: 1.5; 
+    letter-spacing: 1px; 
+    word-spacing: 2px; 
+    padding: 0;
+}
+
+
+.Contenedor {
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 80%; 
+    height: 80%; 
+    overflow: auto; 
+}
+
+
+Table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+th {
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.mNombre{
+    font-size: 60px;
+    padding: 0;
+}
