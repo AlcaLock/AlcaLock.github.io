@@ -1,0 +1,48 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #f7dc6f; /* Amarillo pastel */
+    color: #333; /* Color de texto oscuro */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para los enlaces del menú */
+header nav ul li a {
+    text-decoration: none;
+    color: #333; /* Color de texto oscuro */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Letras más gruesas */
+}
+
+/* Estilos para el cuerpo */
+body {
+    background-color: #d5f5e3; /* Verde pastel */
+    color: #333; /* Color de texto oscuro */
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.6; /* Espacio entre líneas */
+}
+
+/* Estilos para el contenido */
+div {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #f7dc6f; /* Amarillo pastel */
+    color: #333; /* Color de texto oscuro */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold; /* Letras más gruesas */
+}
+
+
+
