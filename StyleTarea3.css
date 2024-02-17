@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     margin: 0;
     padding: 0;
@@ -39,11 +39,11 @@ header img {
     margin-top: 20px;
 }
 
-/* Estilos para el contenido del main */
+
 main {
     margin-top: 20px;
     text-align: center;
-    margin-bottom: 0; /* Ajuste para eliminar espacio inferior */
+    margin-bottom: 0; 
 }
 
 h1 {
@@ -80,8 +80,8 @@ iframe {
 }
 
 .descarga {
-    text-align: center; /* Alinea el contenido al centro */
-    margin-bottom: 20px; /* Ajuste para añadir espacio inferior */
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .descarga .download-link {
@@ -107,7 +107,7 @@ iframe {
 }
 
 .descarga .download-link::after {
-    content: '\2193'; /* Código Unicode para la flecha hacia abajo */
+    content: '\2193'; 
     margin-left: 10px;
 }
 footer {
