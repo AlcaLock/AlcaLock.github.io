@@ -1,0 +1,132 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffd700;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Sidebar izquierdo */
+.sidebar-left {
+    width: 20%;
+    background-color: #f2f2f2;
+    float: left;
+}
+
+.sidebar-left ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-left ul li {
+    padding: 10px;
+}
+
+.sidebar-left ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.sidebar-left ul li a:hover {
+    background-color: #ddd;
+}
+
+
+
+/* Sidebar derecho */
+.sidebar-right {
+    width: 20%;
+    background-color: #f2f2f2;
+    float: right; /* Cambiado de 'float: left;' a 'float: right;' */
+}
+
+.sidebar-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-right ul li {
+    padding: 10px;
+}
+
+.sidebar-right ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.sidebar-right ul li a:hover {
+    background-color: #ddd;
+}
+
+
+/* Media queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar-left, .main-content, .sidebar-right {
+        width: 100%;
+        float: none;
+    }
+}
+

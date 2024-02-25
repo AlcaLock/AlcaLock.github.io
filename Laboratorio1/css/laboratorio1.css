@@ -1,0 +1,138 @@
+body {
+    margin: 150px;
+    margin-top: -8px;
+    margin-bottom: 26cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+
+}
+.navbar-links {
+    list-style: none;
+    float: right;
+    background-color: beige;
+}
+
+
+.navbar-links li {
+    display: inline;
+    justify-content: end;
+    font-family: 'Helvetica'; 
+    font-size: 20px;
+}
+
+.navbar-links li a {
+    color: black; 
+    text-decoration: none; 
+    padding: 8px 12px; 
+}
+
+.navbar-links li a:hover {
+    color: #258EA3; 
+}
+
+img {
+    width: 100%; 
+}
+article li {
+    list-style: none;
+    background-image: url(/Laboratorio1/Imagenes/consola.png); 
+    background-repeat: no-repeat; 
+    background-size: 40px; 
+    padding-left: 50px; 
+}
+
+
+
+aside {
+    width: 30%;
+    background-image: url(/Laboratorio1/Imagenes/fondojuegos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFA07A;
+    float: left; 
+    box-sizing: border-box;
+    
+}
+
+main {
+    width: 65%; 
+    float: right;
+    box-sizing: border-box;
+    
+}
+
+main h1{
+    margin-bottom: 26px;
+    color: #41cffa;
+    font-size: 30px;
+    display: block;
+    border-bottom: 2px solid;
+}
+
+article h1 {
+    margin-bottom: 26px;
+    color: #e67d45;
+    font-size: 30px;
+    display: block;
+    border-bottom: 2px solid;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: center; 
+}
+
+.footer-content > div {
+    margin: 0 100px; 
+}
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0; /* Cambia el margen a cero */
+        padding: 0; /* Quita el relleno */
+    }
+
+    .navbar-links {
+        float: none; /* Quita el flotado */
+        text-align: center; /* Centra los elementos */
+    }
+
+    .navbar-links li {
+        display: block; /* Cambia a bloque para que cada elemento aparezca en una línea */
+        margin-bottom: 10px; /* Agrega un espacio entre los elementos */
+    }
+
+    aside, main {
+        width: 100%; /* Cambia el ancho a 100% para que ocupen toda la pantalla */
+        float: none; /* Quita el flotado */
+        box-sizing: border-box; /* Mantén el mismo modelo de caja */
+        padding: 10px; /* Agrega un espacio interno */
+    }
+
+    footer {
+        position: relative; /* Cambia la posición a relativa */
+    }
+
+    .footer-content > div {
+        margin: 0; /* Quita el margen lateral */
+    }
+
+    article li {
+        padding-left: 50px; /* Ajusta el espacio a la izquierda */
+        background-size: 30px; /* Ajusta el tamaño de la imagen */
+    }
+}
