@@ -35,7 +35,7 @@ img {
 }
 article li {
     list-style: none;
-    background-image: url(Imagenes/consola.png); 
+    background-image: url(/Imagenes/consola.png); 
     background-repeat: no-repeat; 
     background-size: 40px; 
     padding-left: 50px; 
@@ -45,7 +45,7 @@ article li {
 
 aside {
     width: 30%;
-    background-image: url(Imagenes/fondojuegos.jpg);
+    background-image: url(/Imagenes/fondojuegos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
