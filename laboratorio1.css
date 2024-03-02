@@ -35,7 +35,7 @@ img {
 }
 article li {
     list-style: none;
-    background-image: url(/Imagenes/consola.png); 
+    background-image: url(/Imagenes/consola.png);
     background-repeat: no-repeat; 
     background-size: 40px; 
     padding-left: 50px; 
@@ -102,37 +102,37 @@ footer {
 }
 @media only screen and (max-width: 600px) {
     body {
-        margin: 0; /* Cambia el margen a cero */
-        padding: 0; /* Quita el relleno */
+        margin: 0; 
+        padding: 0; 
     }
 
     .navbar-links {
-        float: none; /* Quita el flotado */
-        text-align: center; /* Centra los elementos */
+        float: none; 
+        text-align: center; 
     }
 
     .navbar-links li {
-        display: block; /* Cambia a bloque para que cada elemento aparezca en una línea */
-        margin-bottom: 10px; /* Agrega un espacio entre los elementos */
+        display: block; 
+        margin-bottom: 10px; 
     }
 
     aside, main {
-        width: 100%; /* Cambia el ancho a 100% para que ocupen toda la pantalla */
-        float: none; /* Quita el flotado */
-        box-sizing: border-box; /* Mantén el mismo modelo de caja */
-        padding: 10px; /* Agrega un espacio interno */
+        width: 100%; 
+        float: none; 
+        box-sizing: border-box; 
+        padding: 10px; 
     }
 
     footer {
-        position: relative; /* Cambia la posición a relativa */
+        position: relative; 
     }
 
     .footer-content > div {
-        margin: 0; /* Quita el margen lateral */
+        margin: 0; 
     }
 
     article li {
-        padding-left: 50px; /* Ajusta el espacio a la izquierda */
-        background-size: 30px; /* Ajusta el tamaño de la imagen */
+        padding-left: 50px; 
+        background-size: 30px; 
     }
 }
