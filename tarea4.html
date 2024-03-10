@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4</title>
+    <link rel="stylesheet" href="tarea4.css">
+</head>
+<body>
+
+
+    <h2>Control de flujo y manejo de errores</h2>
+    <p>
+        En esta sección, puedes probar distintas estructuras de control de flujo y manejo de errores en JavaScript.
+    </p>
+
+
+    <h2>if...else</h2>
+    <p>
+        Ingresa un texto en el primer input y presiona el botón para verificar si coincide con "Amenidades". Si coincide, verás "Texto Correcto", de lo contrario, "Texto Erróneo".
+    </p>
+    <input id="textoRecibido" type="text" placeholder="Ingresa un texto">
+    <input type="button" value="Verificar Texto" onclick="textoIgual()">
+
+
+    <h2>switch</h2>
+    <p>
+        Selecciona una opción haciendo clic en los checkboxes. Cada vez que selecciones una opción, se mostrará un mensaje diferente.
+    </p>
+    <input id="opcion1" name="seleccion" type="checkbox" onclick="seleccion('1')"> Opción 1
+    <input id="opcion2" name="seleccion" type="checkbox" onclick="seleccion('2')"> Opción 2
+    <input id="opcion3" name="seleccion" type="checkbox" onclick="seleccion('3')"> Opción 3
+
+
+    <h2>try/catch/throw</h2>
+    <p>
+        Ingresa un valor en el segundo input y presiona el botón para verificar si es un número. Si es un número, se mostrará "Agregado", de lo contrario, se mostrará el mensaje de error correspondiente.
+    </p>
+    <input id="textoRecibido2" type="text" placeholder="Ingresa un número">
+    <input type="button" value="Verificar Número" onclick="tryElCatch()">
+
+    <br>
+    <br>
+    <br>
+
+    <h2>Funcionalidades Específicas</h2>
+    <p>
+        En esta sección, puedes probar funciones específicas y ver su comportamiento en JavaScript.
+    </p>
+
+    <h3>Conteo con bucle for</h3>
+    <p>
+        Presiona el botón para mostrar una secuencia de números del 0 al 9 utilizando un bucle for.
+    </p>
+    <input type="button" value="Contar" onclick="conteoFor()">
+
+
+    <h3>Conversión a binario</h3>
+    <p>
+        Ingresa un número en el primer campo de texto y presiona el botón para convertirlo a su representación binaria.
+    </p>
+    <input id="textoRecibido3" type="text" placeholder="Ingresa un número">
+    <input type="button" value="Convertir a binario" onclick="binario()">
+
+
+    <h3>Mostrar números con do...while</h3>
+    <p>
+        Presiona el botón para mostrar una secuencia de números del 1 al 5 utilizando un bucle do...while.
+    </p>
+    <button onclick="doWhileBasico()">Mostrar Números</button>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Funcionalidades Específicas</h2>
+    <p>
+        En esta sección, puedes probar diversas operaciones y funciones específicas en JavaScript.
+    </p>
+
+   
+    <h3>Comparación de números</h3>
+    <p>
+        Ingresa dos números en los campos de texto y presiona el botón para compararlos.
+    </p>
+    <input id="textoRecibido4" type="text" placeholder="Ingresa el primer número">
+    <input id="textoRecibido5" type="text" placeholder="Ingresa el segundo número">
+    <input type="button" value="Comparar" onclick="mayormenor()">
+    <br>
+    <br>
+
+
+    <h3>Operaciones aritméticas</h3>
+    <p>
+        Ingresa dos números en los campos de texto y presiona el botón para realizar operaciones aritméticas.
+    </p>
+    <input id="numero1" type="number" placeholder="Ingresa el primer número">
+    <input id="numero2" type="number" placeholder="Ingresa el segundo número">
+    <input type="button" value="Calcular" onclick="operacionesAritmeticas()">
+    <br>
+    <br>
+
+
+    <h3>Operaciones lógicas</h3>
+    <p>
+        Ingresa tres números en los campos de texto y presiona el botón para realizar operaciones lógicas.
+    </p>
+    <input id="numero3" type="number" placeholder="Ingresa el primer número">
+    <input id="numero4" type="number" placeholder="Ingresa el segundo número">
+    <input id="numero5" type="number" placeholder="Ingresa el tercer número">
+    <input type="button" value="Calcular" onclick="operadoresLogicos()">
+    <br>
+    <br>
+
+
+    <h3>Propiedades del objeto Number</h3>
+    <p>
+        Ingresa un número en el campo de texto y presiona el botón para mostrar sus propiedades.
+    </p>
+    <input id="numero" type="text" placeholder="Ingresa un número">
+    <input type="button" value="Mostrar propiedades" onclick="mostrarPropiedadesNumber()">
+    <br>
+    <br>
+
+
+    <h3>Cálculo del seno</h3>
+    <p>
+        Ingresa un ángulo en grados en el campo de texto y presiona el botón para calcular su seno.
+    </p>
+    <input id="angulo" type="number" placeholder="Ingresa un ángulo en grados">
+    <input type="button" value="Calcular seno" onclick="calcularSeno()">
+    <br>
+    <br>
+
+
+    <h3>Mostrar fecha actual</h3>
+    <p>
+        Presiona el botón para mostrar la fecha actual.
+    </p>
+    <input type="button" value="Mostrar fecha actual" onclick="mostrarFechaActual()">
+
+
+<br>
+<br>
+
+<h2>Funcionalidades Específicas</h2>
+<p>
+    En esta sección, puedes probar diversas operaciones y funciones específicas en JavaScript.
+</p>
+
+
+<h3>Mostrar cadena literal</h3>
+<p>
+    Ingresa una cadena literal en el campo de texto y presiona el botón para mostrarla.
+</p>
+<input id="cadenaLiteralInput" type="text" placeholder="Ingrese una cadena literal">
+<input type="button" value="Mostrar" onclick="mostrarCadenaLiteral()">
+<br>
+<br>
+
+
+<h3>Convertir cadena a mayúsculas</h3>
+<p>
+    Ingresa una cadena en el campo de texto y presiona el botón para convertirla a mayúsculas.
+</p>
+<input id="stringInput" type="text" placeholder="Ingrese una cadena">
+<input type="button" value="Convertir a mayúsculas" onclick="convertirMayusculas()">
+<br>
+<br>
+
+
+<h3>Operaciones con arreglos</h3>
+<p>
+    Ingresa un elemento en el campo de texto y presiona el botón para agregarlo al arreglo.
+</p>
+<input id="arregloInput" type="text" placeholder="Ingrese un elemento del arreglo">
+<input type="button" value="Agregar elemento" onclick="agregarElementoArreglo()">
+<input type="button" value="Mostrar elementos" onclick="mostrarElementosArreglo()">
+
+
+<h3 class="Encontrar">Encontrar elemento por ID</h3>
+<p id="Resaltar">Ingrese el ID del elemento a buscar y dar un mensaje::</p>
+<p> Puede utilizar  inputTagName,  stringInput, angulo</p>
+<input id="inputId" type="text" placeholder="ID del elemento">
+<input type="button" value="Buscar" onclick="resaltarPorId()">
+
+
+<h3>Encontrar elementos por nombre de etiqueta</h3>
+<p>Ingrese el nombre de la etiqueta para buscar todos los elementos y dar un mensaje:</p>
+<p class="Util">Puede utilizar  p, div, h3, h2</p>
+<input id="inputTagName" type="text" placeholder="Nombre de etiqueta">
+<input type="button" value="Buscar" onclick="resaltarPorNombreEtiqueta()">
+
+
+<h3>Encontrar elementos por nombre de clase</h3>
+<p>Ingrese el nombre de la clase para buscar todos los elementos y dar un mensaje:</p>
+<p>Puedes utilizar Encontrar, Util</p>
+<input id="inputClassName" type="text" placeholder="Nombre de clase">
+<input type="button" value="Buscar" onclick="resaltarPorNombreClase()">
+
+
+<h3>Encontrar elementos por selector CSS</h3>
+<p>Ingrese el selector CSS para buscar todos los elementos y dar un mensaje:</p>
+<p>Puedes utilizar p, h2, input</p>
+
+<input id="inputSelector" type="text" placeholder="Selector CSS">
+<input type="button" value="Buscar" onclick="resaltarPorSelector()">
+
+
+<h3>Encontrar elementos por colección de objetos HTML</h3>
+<p>Ingrese el índice del elemento a resaltar:</p>
+<p>Puedes utilizar 1, 2 o 3 ya que son los indices que están dentro del div que es donde está buscando todo</p>
+<input id="inputIndice" type="number" placeholder="Índice del elemento">
+<input type="button" value="Buscar" onclick="resaltarPorIndice()">
+
+<p>Esta parte contiene h3, div, p, clases como resaltado e ids como parrafo1 a parrafo4</p>
+
+<h3>Ejemplo de elementos HTML</h3>
+<div id="ejemplo">
+    <p id="parrafo1" class="resaltado">Primer párrafo</p>
+    <p id="parrafo2">Segundo párrafo</p>
+    <p id="parrafo3" class="resaltado">Tercer párrafo</p>
+    <p id="parrafo4">Cuarto párrafo</p>
+</div>
+
+
+
+    <script src="tarea4.js"></script> 
+</body>
+</html>
